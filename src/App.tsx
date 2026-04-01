@@ -1,14 +1,19 @@
 import './App.css'
 // import Home from './pages/Home'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import WelcomePage from './pages/WelcomePage'
+import SignUp from './pages/SignUp';
 
 function App() {
 
   return (
     <>
-      {/* <Home /> */}
-      <h1 className="text-3xl font-bold text-blue-500">
-  Hello Tailwind 👋
-</h1>
+      <Router>
+        <Routes>
+          <Route path="/" element={<WelcomePage />} />
+          <Route path="/signup" element={<SignUp />} />
+        </Routes>
+      </Router>
     </>
   )
 }

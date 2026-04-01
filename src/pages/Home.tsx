@@ -1,6 +1,6 @@
 import React from 'react'
 import { useEffect } from 'react'
-import Api from '../services/api'
+import Api from '../services/Api'
 
 function Home() {
 
